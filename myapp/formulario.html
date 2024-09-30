@@ -1,0 +1,60 @@
+
+<DOCTYPE! html>
+
+<html>
+<head>
+<link href="./archivoconclases.css" rel="stylesheet">
+
+    </head>
+</head>
+<body>
+<form action="gracias.html" method="post" target="_blank" name="formularioWeb">
+	<!-- text | email | radio | checkbox | number | date | range | ... -->
+	
+	<label for="manzana">Escribe tu nombre:</label>
+	<input type="text" placeholder="Francesc" name="nombre" id="manzana" maxlength="30" size="40" required="required"/>
+<input type="text" placeholder="ingresesuapellido" name="apellido" id="ape1" size="45" require="required"/>
+	<label for="platano">Escribe tu apellido:</label>
+	<input type="text" placeholder="Ricart" name="apellido" id="platano" maxlength="50"/>
+
+	<label for="uva">Escribe tu email:</label>
+	<input type="email" placeholder="correo@empresa.com" name="correo" id="uva">
+
+	<label for="estrellita-5" class="bloque">¿Qué valoración le das a la publicación?</label>
+	<input type="radio" name="valoracion" value="0" id="estrellita-0"><label for="estrellita-0" class="estrellita">0</label>
+	<input type="radio" name="valoracion" value="1" id="estrellita-1"><label for="estrellita-1" class="estrellita">1</label>
+	<input type="radio" name="valoracion" value="2" id="estrellita-2"><label for="estrellita-2" class="estrellita">2</label>
+	<input type="radio" name="valoracion" value="3" id="estrellita-3"><label for="estrellita-3" class="estrellita">3</label>
+	<input type="radio" name="valoracion" value="4" id="estrellita-4"><label for="estrellita-4" class="estrellita">4</label>
+	<input type="radio" name="valoracion" value="5" checked id="estrellita-5"><label for="estrellita-5" class="estrellita">5</label>
+
+
+	<label for="" class="bloque">¿Qué asignaturas has estudiado?</label>
+
+	<input type="checkbox" name="asignatura" class="" value="html" id="alfa"> 
+	<label for="alfa">html</label>
+	
+	<input type="checkbox" name="asignatura" class="" value="css" id="beta"> 
+	<label for="beta">css</label>
+	
+	<input type="checkbox" name="asignatura" class="" value="javascript" id="omega">
+	<label for="omega">javascript</label>
+
+	<label for="" class="bloque">Selecciona tu alineación ideal</label>
+
+	<select name="alineacionIdeal" id="" multiple size="5">
+		<option value="cristiano">Cristiano</option>
+		<option value="messi">Messi</option>
+		<option value="chigrinsky">Chigrinsky</option>
+		<option value="sergio ramos">Sergio Ramos</option>
+		<option value="shevchenko">Shevchenko</option>
+	</select>
+
+	<label for="" class="bloque">¿Qué mejorarías de este curso?</label>
+	<textarea name="sugerencias" id="" maxlength="300"></textarea>
+	
+	<input type="submit" name="enviar" value="Enviar"/>
+
+</form>
+</body>
+</html>

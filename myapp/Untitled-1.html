@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .clase1 { background-color:red;}
+        .clase2 { background-color:white;
+       
+        }
+    </style>
+</head>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2 id="titulo2">The onclick Attribute</h2>
+<p id="par1" class="clase2" style="color: red">Este es el <u>párrafo 1</u></p>
+<p id="par2">Este es el párrafo 2</p>
+<p class="clase1">Este es el párrafo 3</p>
+<p class="clase2" style="letter-spacing:10px">Este es <em>el párrafo 4</em></p>
+<p class="clase2" style="word-spacing:40px;text-align:right">Este es el párrafo 5</p>
+<p style="color:blue; text-align:center">Este es el <strong>párrafo 6</strong></p>
+<p style="color:green; text-indent:25px">Este es el párrafo 7</p>
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo" class="clase1">texto original</p>
+<script>
+
+const cp=document.getElementsByTagName("p")
+console.log(cp)
+demo.innerText=`cantidad de párrafos ${cp.length}`
+console.log(cp[7])
+
+
+demo.addEventListener("mouseover",f1)
+    demo.addEventListener("mouseout",f2)
+   
+    function f1 (){
+    // alert(document.getElementById("demo"))
+    demo.className="clase1";
+            demo.innerText=demo.className}
+    function f2 (){
+    demo.className="clase2"
+            demo.innerText=demo.className}
+   
+titulo2.onmouseover=f3
+function f3(){
+titulo2.innerText="Nuevo Texto del título"}
+
+titulo2.onmouseout=f4
+function f4(){
+titulo2.innerText="The onclick Attribute"}
+
+
+</script>
+</body>
+</html>
+

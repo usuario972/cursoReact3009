@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    *{
+margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+border: none;
+outline: none;
+    }
+
+
+    .clase1 { color:green
+        }
+    .clase2 { color:red
+        }
+           
+       
+           
+           
+        .cm { width:100%;
+        height:100vh;
+                background-color:rgba(0,0,0,0.3);
+                position: fixed;
+                top:0;
+                left:0;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                opacity:0;
+                        visibility: hidden;
+        }
+                       
+                       
+.estilomodal { border-radius:2px solid red;
+        background-color:white;
+                        align-items:center;
+                        width:400px;
+                        heigth:400px;
+                        align-text:center;
+                         display:flex;
+                         margin:25px;
+                         flex-direction:column;
+                justify-content:center;
+                align-items:center;
+                       
+                   
+                }
+
+.vm {opacity:1;
+         visibility: visible}
+
+
+    </style>
+</head>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2 id="t1">The onclick Attribute</h2>
+<img src="https://static.cdn.cadena3.com/admin/playerswf/fotos/ARCHI_1296184.jpg"width="400px" height="300px">
+<div id="cm" class="cm">
+<div id="m1" class="estilomodal">
+<h4>TTIULO DEL MODAL</h4>
+        <br>
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+        <button id="btn3">volver</button>
+</div>
+</div>
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo">Este es el texto original</p>
+<form id="form11">
+<input  id="nodo2" type="text" placeholder="ingresesuapellido">
+<input  id="i2" type="text" placeholder="ingresesunombre">
+<input id="i3" type="password" placeholder="password">
+<input id="i4" type="submit" value="enviar" >
+
+</form>
+
+<button id="btn2">ver modal</button>
+<script>
+
+i3.onmouseover=()=>{console.log(i3)}
+
+i3.onclick=f105
+function f105 (e1){
+    console.log(e1)
+    console.log(e1.isTrusted)
+    console.log(e1.altKey)
+    console.log(e1.pageX)
+    console.log(e1.pageY)
+i3.type="text"}
+
+i3.ondblclick=f1051
+function f1051 (){
+i3.type="password"}
+
+
+t1.onmouseover=f2
+t1.onmouseout=f3
+//const form1=document.getElementById("form1")
+form11.onsubmit=f100
+function f100 (ev1){
+   console.log(ev1)
+alert("botón clickeado")
+alert(nodo2.value +" - "+i2.value+" - "+i3.value+" - "+i4.value )
+if(nodo2.value.length<=3)
+{nodo2.style.border="2px red solid"}
+console.log(ev1.target.length)
+//alert("submit")
+console.log(ev1.defaultPrevented)
+ev1.preventDefault()
+console.log(ev1.defaultPrevented)
+}
+const nodo2=document.getElementById("nodo2")
+nodo2.oninput=f50
+
+btn2.onclick=func1
+
+function func1 (){
+cm.classList.add("vm")
+}
+
+btn3.onclick=func2
+function func2 (){
+cm.classList.remove("vm")
+}
+
+
+function f50 (){
+//alert("Ud. ingresó un caracter")
+}
+
+const texto1=prompt("Ingrese un numero:")
+console.log(typeof texto1)
+texto2=Number(texto1)
+texto3=parseInt(texto1)
+console.log(typeof texto2)
+console.log(typeof texto3)
+console.log(texto1)
+console.log(texto2)
+console.log(texto3)
+
+const nodo1=document.getElementById("demo")
+    nodo1.onmousedown=f2
+    window.onmouseup=f3
+   
+   
+function f2 (){
+//alert("Ud. presionó mousedown")
+t1.className="clase1"
+}    
+
+function f3 (){
+//alert("Ud. soltó el mouse")
+    t1.className="clase2"
+}    
+
+</script>
+</body>
+</html>
+

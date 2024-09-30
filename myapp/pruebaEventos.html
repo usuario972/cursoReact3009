@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.clase1 { border:5px solid red
+    }
+   
+    .clase2 { border:2px solid green
+    }
+   
+.clasemci{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+position: fixed;
+top:0;
+left:0;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+visibility: hidden}
+
+.clasem1{
+  background-color: white;
+  width: 460px;
+  min-height: 300px;
+  border-radius: 20px;
+  padding: 2px;
+}
+
+.clasemcv {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+}
+
+
+
+    </style>
+</head>
+<body>
+<h1 id="titulo">JavaScript HTML Events</h1>
+<h2 id="t2">The onclick Attribute</h2>
+
+<button onmouseover="fr2()" onmouseout="fr1()" onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<form>
+<input onfocus="func1()"  onblur="func2()" type="text" id="demo1" value="" placeholder="nombre">
+<br>
+<input type="text" id="demo12" placeholder="apellido" value="">
+<br>
+<input type="text" id="demo13" placeholder="edad" value="">
+<br>
+<input type="text" id="demo14" placeholder="altura" value="">
+<br>
+<input type="text" id="demo15" placeholder="sexo" value="">
+<br>
+<input id="bf" type="submit" onsubmit="f1000()" value="Exportar">
+<input type="reset" value="Limpiar">
+
+</form>
+
+<p id="demo"></p>
+
+
+<div id="mc" class="clasemci">
+    <div id="m1" class="clasem1">
+        <h>Titulo del modal</h>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. In quos earum ipsam ab ipsa. Eaque magni beatae cupiditate asperiores quasi maxime aliquam in odio, voluptatibus distinctio accusamus esse ab necessitatibus.</p>
+        <button id="bx">X</button>
+    </div>
+</div>
+<button id="bvm">ver modal</button>
+
+
+
+<script>
+const mc=document.getElementById("mc")
+const m1=document.getElementById("m1")
+const bx=document.getElementById("bx")
+const bvm=document.getElementById("bvm")
+
+bx.onclick=()=>{
+    mc.className="clasemci"
+}
+
+bmv.onclick=()=>{
+    mc.classList.add("clasemcv")
+
+}
+
+
+
+
+
+
+
+const nodo2=document.getElementById("t2")
+nodo2.addEventListener("mouseover",()=>{
+
+r=Math.round(Math.random()*255+0)
+g=Math.round(Math.random()*255+0)
+b=Math.round(Math.random()*255+0)
+let rgb=`rgb(${r},${g},${b})`
+
+nodo2.style.backgroundColor=rgb
+})
+
+
+window.addEventListener("click",f10000)
+
+function f10000 (){
+r=Math.round(Math.random()*255+0)
+g=Math.round(Math.random()*255+0)
+b=Math.round(Math.random()*255+0)
+let rgb=`rgb(${r},${g},${b})`
+
+document.body.style.backgroundColor=rgb
+}
+
+nodo2.addEventListener("mouseout",()=>{
+nodo2.style.backgroundColor="white"
+})
+nodo2.addEventListener("click",()=>{
+alert("presiono click sobre el titulo 2")})
+
+
+const nodo1000=document.getElementById("bf")
+nodo1000.onclick=f1000
+function f1000 (even1){
+console.log(even1)
+/*console.log("isTrusted "+even1.isTrusted)
+console.log("altKey "+even1.altKey)
+console.log("altitudeAngle "+even1.altitudeAngle)
+console.log("azimuthAngle "+even1.azimuthAngle)
+console.log("bubbles "+even1.bubbles)
+console.log("button "+even1.button)
+console.log("buttons "+even1.buttons)
+console.log("cancelBubble "+even1.cancelBubble)
+console.log("cancelable "+even1.cancelable)
+console.log("clientX "+even1.clientX)
+console.log("clientY "+even1.clientY)
+console.log("composed "+even1.composed)
+console.log("ctrlKey "+even1.ctrlKey)
+console.log("currenctTarget"+even1.currentTarget)
+console.log(even1.defaultPrevented)
+console.log("detail "+even1.detail)
+console.log("eventPhase "+even1.eventPhase)
+console.log("fromElement "+even1.fromElement)
+console.log("height "+even1.height)
+console.log("isPrimary "+even1.isPrimary)
+console.log("layerX "+even1.layerX)
+console.log("layerY "+even1.layerY)
+console.log("metaKey "+even1.metaKey)
+console.log("movementX "+even1.movementX)
+console.log("movementY "+even1.movementY)
+console.log("offsetX "+even1.offsetX)
+console.log("offsetY "+even1.offsetY)
+console.log("pageX "+even1.pageX)
+console.log("pageY "+even1.pageY)
+console.log("pointerId "+even1.pointerId)
+console.log("pointerType "+even1.pointerType)
+console.log("pressure "+even1.pressure)
+console.log("relatedTarget "+even1.relatedTarget)
+console.log("returnValue "+even1.returnValue)
+console.log("screenX "+even1.screenX)
+console.log("screenY "+even1.screenY)
+console.log("currentTarget "+even1.currentTarget)
+console.log(even1.currentTarget)
+console.log("defaultPrevent "+even1.defaultPrevented)
+console.log("pointerId "+even1.pointerId)
+console.log("pointerType "+even1.pointerType)
+    even1.preventDefault()
+console.log("defaultPrevent "+even1.defaultPrevented)
+*/
+even1.preventDefault()
+const n12=document.getElementById("demo12")
+const n13=document.getElementById("demo13")
+const n14=document.getElementById("demo14")
+const n15=document.getElementById("demo15")
+console.log(n111.value)
+console.log(n12.value)
+console.log(n13.value)
+console.log(n14.value)
+console.log(n15.value)
+
+
+}
+
+
+
+
+function func1 (event){
+console.log(event.isTrusted)
+n111.style.border="10px solid green"
+
+}
+
+function func2 (){
+n111.style.border="1px solid black"
+
+}
+
+
+const nt1=document.getElementById("titulo")
+nt1.onmouseover=f1t1
+nt1.onmouseout=f2t1
+function f1t1 () {
+nt1.innerHTML="<u>JavaScript HTML Events</u>"
+nt1.style.color="blue"
+}
+
+function f2t1 () {
+nt1.innerHTML="JavaScript HTML Events"
+nt1.style.color="red"}
+
+
+
+let n111=document.getElementById("demo1")
+n111.onkeydown=f12
+n111.onmouseover=f101
+n111.onchange=f50
+
+function f50 (e1){
+console.log(e1)
+alert("nuevo valor del input "+n111.value)
+alert(event.target)
+
+}
+
+
+function f12 (){
+//alert(event.type)
+if (n111.value.length<=5)
+{n111.className="clase1"}
+else {
+n111.className="clase2"
+}}
+
+function f101 () {
+//alert("aqui debera ingresar su nombre y apellido")
+}
+
+/*let n111=document.getElementById("demo1")
+n111.onkeydown=fr10
+
+function fr10 (ev) {
+  alert("Has pulsado la tecla "+ev.key+" - "+ev.code)
+}*/
+
+/*window.addEventListener("click",f5)
+
+function f5 (){
+let r=Math.round(Math.random()*255+0)
+    let v=Math.round(Math.random()*255+0)
+    let a=Math.round(Math.random()*255+0)
+document.body.style.backgroundColor=`rgb(${r}+${v}+${a})`
+ 
+}*/
+
+
+
+const fr1= ()=> {
+d1[0].style.color=`black`}
+const fr2= ()=> {
+
+let r=Math.round(Math.random()*255+0)
+    let v=Math.round(Math.random()*255+0)
+    let a=Math.round(Math.random()*255+0)
+d1[0].style.backgroundColor=`rgb(${r}+${v}+${a})`
+   
+    }
+const fr3= ()=> {
+d1[0].style.color="red"
+    document.getElementById("demo").innerText="  "
+    }
+
+
+
+const d1=document.getElementsByTagName("button")
+d1[0].addEventListener("dblclick",fr1)
+//d1[0].onmouseover=fr2
+//d1[0].onmouseout=fr3
+   
+
+
+
+</script>
+</body>
+</html>

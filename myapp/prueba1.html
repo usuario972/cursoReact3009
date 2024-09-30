@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-16" />
+    <title>Mi página de prueba</title>
+  </head>
+
+
+
+<body>
+
+
+<h1 id="titulo1">JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+<input type="text" id="name" name="apellido" minlength="4" maxlength="8" size="10" />
+<button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo">Este es el texto del documento</p>
+
+<script>
+
+console.log(window.location.href)
+const nodox1=document.getElementById("titulo1")
+nodox1.addEventListener("mouseover",fx1)
+nodox1.addEventListener("mouseout",fx2)
+function fx1 (){
+nodox1.style.color="green"
+nodox1.style.textDecoration="underline"
+}
+function fx2 (){
+nodox1.style.color="orange"
+nodox1.style.textDecoration="line-through"
+
+}
+
+
+
+
+const punto1=document.getElementById("demo")
+
+punto1.addEventListener("click",f2)
+function f2 (){
+punto1.style.backgroundColor="red";
+}
+punto1.addEventListener("dblclick",f3)
+function f3 (){
+punto1.style.backgroundColor="white";
+}
+
+
+const punto2=document.getElementsByTagName("button")
+punto2[0].addEventListener("mouseover",funcion4)
+function funcion4(){
+punto2[0].style.backgroundColor="yellow"
+}
+
+punto2[0].addEventListener("mouseout",funcion5)
+function funcion5(){
+punto2[0].style.backgroundColor="green"
+}
+/*const nodox=document.getElementById("titulo")
+nodox.addEventListener("mouseover",f22)
+function f22 (){
+nodox.style.color="blue"
+nodox.style.textDecoration="underline"
+}
+nodox.addEventListener("mouseout",f23)
+function f23 (){
+nodox.style.color="black"
+}*/
+
+const nodo11=document.getElementById("name")
+console.log(nodo11.type)
+console.log(nodo11.id)
+console.log(nodo11.name)
+console.log(nodo11.minlength)
+console.log(nodo11.maxlength)
+console.log(nodo11.size)
+console.log(nodo11)
+
+
+
+</script>
+</body>
+</html>
